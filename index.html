@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoSort - Waste Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>EcoSort - Waste Management</h1>
+    <p>Drag the waste items into the correct bins.</p>
+
+    <div class="waste-box">
+        <h2>Waste Items</h2>
+
+        <div id="waste">
+            <div class="item" data-type="recycle">
+                <img src="./assets/newspaper.svg" alt="Newspaper">
+                <br>Newspaper
+            </div>
+
+            <div class="item" data-type="recycle">
+                <img src="./assets/plastic-bottle.svg" alt="Plastic bottle">
+                <br>Plastic Bottle
+            </div>
+
+            <div class="item" data-type="compost">
+                <img src="./assets/apple-core.svg" alt="Apple core">
+                <br>Apple Core
+            </div>
+
+            <div class="item" data-type="compost">
+                <img src="./assets/banana-peel.svg" alt="Banana peel">
+                <br>Banana Peel
+            </div>
+
+            <div class="item" data-type="landfill">
+                <img src="./assets/broken-mug.svg" alt="Broken mug">
+                <br>Broken Mug
+            </div>
+
+            <div class="item" data-type="recycle">
+                <img src="./assets/soda-can.svg" alt="Soda can">
+                <br>Soda Can
+            </div>
+
+            <div class="item" data-type="landfill">
+                <img src="./assets/chip-packet.svg" alt="Chip packet">
+                <br>Chip Packet
+            </div>
+        </div>
+    </div>
+
+    <h2>Waste Bins</h2>
+
+    <div class="bins">
+
+  
+        <div class="bin recycle" data-bin="recycle">
+            <div class="lid"></div>
+
+            <div class="bin-body">
+                <h3>♻️</h3>
+                <div class="items"></div>
+            </div>
+
+            <h3>Recycle</h3>
+        </div>
+
+        
+        <div class="bin compost" data-bin="compost">
+            <div class="lid"></div>
+
+            <div class="bin-body">
+                <h3>🌱</h3>
+                <div class="items"></div>
+            </div>
+
+            <h3>Compost</h3>
+        </div>
+
+        <div class="bin landfill" data-bin="landfill">
+            <div class="lid"></div>
+
+            <div class="bin-body">
+                <h3>🗑️</h3>
+                <div class="items"></div>
+            </div>
+
+            <h3>Landfill</h3>
+        </div>
+
+    </div>
+
+    <p id="message">Start sorting!</p>
+
+    <button id="reset">Reset Game</button>
+
+    <footer>EcoSort Sorting Game</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
